@@ -1,6 +1,7 @@
 <?php 
 $paragraph = $_GET["paragraph"];
-$word = $_GET["word"]
+$word = $_GET["word"];
+$newWord = str_replace($word, "***", $word)
 ?>
 
 <!DOCTYPE html>
@@ -11,7 +12,7 @@ $word = $_GET["word"]
     <title>Document</title>
 </head>
 <body>
-    <p> <?php echo $paragraph ?></p>
-    <div> <?php echo $word ?> </div>
+    <p> Il paragrafo <?php echo $paragraph?> è lungo <?php echo strlen($paragraph)?> </p>
+    <div> <?php echo $newWord ?> </div>
 </body>
 </html>
