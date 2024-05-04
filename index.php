@@ -9,7 +9,6 @@
 <body>
  <form action="badWords.php" method="GET">
     <textarea name="paragraph" type="text" required></textarea>
-    <input name="word" type="text" required>
     <button type="submit">invia dati</button>
  </form>
 </body>

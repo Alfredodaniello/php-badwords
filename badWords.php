@@ -1,7 +1,13 @@
 <?php 
 $paragraph = $_GET["paragraph"];
-$word = $_GET["word"];
-$newWord = str_replace($word, "***", $word)
+$carachter = [
+    "o",
+    "a",
+    "i",
+    "e",
+    "u"
+];
+$newPara = str_replace($carachter, "***", $paragraph)
 ?>
 
 <!DOCTYPE html>
@@ -13,6 +19,6 @@ $newWord = str_replace($word, "***", $word)
 </head>
 <body>
     <p> Il paragrafo <?php echo $paragraph?> è lungo <?php echo strlen($paragraph)?> </p>
-    <div> <?php echo $newWord ?> </div>
+    <div> <?php echo $newPara?> </div>
 </body>
 </html>
